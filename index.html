@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Analyzer</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background: #f5f5f5;
+  }
+  h2 {
+    color: #333;
+  }
+  #responseMsg {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+    border-left: 5px solid #4CAF50;
+    white-space: pre-wrap;
+  }
+  button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+</style>
+
+<body>
+  <h2>Upload Your Resume (.txt)</h2>
+<input type="file" id="resumeFile" /><br>
+<button onclick="uploadResume()">Upload</button>
+<div id="responseMsg"></div>
+
+
+  <script>
+    async function uploadResume() {
+      const fileInput = document.getElementById('resumeFile');
+      const file = fileInput.files[0];
+      const formData = new FormData();
+      formData.append('resume', file);
+
+      const res = await fetch('http://localhost:5000/upload', {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await res.json();
+      let output = "Top Job Matches:\n\n";
+      data.matches.forEach(job => {
+      output += `${job.title} - ${job.match_percent}% match\n`;
+      output += `Required Skills: ${job.skills.join(', ')}\n\n`;
+});
+
+      document.getElementById('responseMsg').innerText = output;
+
+
+    }
+  </script>
+</body>
+</html>

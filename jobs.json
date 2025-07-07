@@ -1,0 +1,125 @@
+[
+  {
+    "title": "Data Scientist",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Pandas"
+    ]
+  },
+  {
+    "title": "Frontend Developer",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React"
+    ]
+  },
+  {
+    "title": "Backend Developer",
+    "skills": [
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ]
+  },
+  {
+    "title": "AI Engineer",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "Deep Learning"
+    ]
+  },
+  {
+    "title": "Mobile App Developer",
+    "skills": [
+      "Flutter",
+      "Dart",
+      "Firebase"
+    ]
+  },
+  {
+    "title": "Cloud Engineer",
+    "skills": [
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  {
+    "title": "DevOps Engineer",
+    "skills": [
+      "CI/CD",
+      "Linux",
+      "Git"
+    ]
+  },
+  {
+    "title": "Cybersecurity Analyst",
+    "skills": [
+      "Network Security",
+      "Firewalls",
+      "Threat Detection"
+    ]
+  },
+  {
+    "title": "UI/UX Designer",
+    "skills": [
+      "Figma",
+      "Wireframes",
+      "Design Systems"
+    ]
+  },
+  {
+    "title": "Full Stack Developer",
+    "skills": [
+      "React",
+      "Node.js",
+      "SQL",
+      "REST"
+    ]
+  },
+  {
+    "title": "Data Analyst",
+    "skills": [
+      "SQL",
+      "Excel",
+      "Tableau",
+      "Pandas"
+    ]
+  },
+  {
+    "title": "Game Developer",
+    "skills": [
+      "Unity",
+      "C#",
+      "Game Physics"
+    ]
+  },
+  {
+    "title": "ML Researcher",
+    "skills": [
+      "NLP",
+      "PyTorch",
+      "Transformers"
+    ]
+  },
+  {
+    "title": "Technical Writer",
+    "skills": [
+      "Documentation",
+      "Markdown",
+      "GitHub"
+    ]
+  },
+  {
+    "title": "Blockchain Developer",
+    "skills": [
+      "Solidity",
+      "Ethereum",
+      "Smart Contracts"
+    ]
+  }
+]
